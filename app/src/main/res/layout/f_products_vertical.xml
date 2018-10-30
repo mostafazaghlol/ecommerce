@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <!--<LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/layoutBackground"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/products_list_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Products : 0"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/filterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_filter"
+            android:tint="@color/white"
+            android:background="@color/colorAccent"
+            android:scaleType="fitCenter"
+            android:padding="10dp" />
+
+    </LinearLayout>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/products_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/loading_bar" />
+
+
+    <TextView
+        android:id="@+id/empty_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/record_not_found"
+        android:textColor="@color/textColorPrimaryDark"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/resetFiltersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/reset_filters"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_filter_remove_white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/empty_record"
+        android:background="@drawable/rounded_corners_button_red" />
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:indeterminateTintMode="src_in"
+        android:indeterminateTint="@color/colorPrimaryLight" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/windowBackgroundDark" >
+
+        <LinearLayout
+            android:id="@+id/sort_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sort"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:clickable="false"
+                android:tint="@color/iconsDark"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/sort_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="@string/Newest"
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondaryDark"
+                android:gravity="start|center_vertical" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/layout_toggleBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:textOff=""
+            android:textOn=""
+            android:checked="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_view" />
+
+        <ToggleButton
+            android:id="@+id/filterBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_filter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

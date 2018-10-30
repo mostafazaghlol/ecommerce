@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "317744243051",
+    "firebase_url": "https://myshop-88e58.firebaseio.com",
+    "project_id": "myshop-88e58",
+    "storage_bucket": "myshop-88e58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317744243051:android:e748937ecdebb547",
+        "android_client_info": {
+          "package_name": "com.vectorcoder.androidecommerce.mydemoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317744243051-02l00noi4mg9n480ipim90hqu6ahd7g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vectorcoder.androidecommerce.mydemoo",
+            "certificate_hash": "be87ffc17c30c02451e6bcdf8fa52fc049591189"
+          }
+        },
+        {
+          "client_id": "317744243051-nqcp3eopp1oo7c14dmuff2mgb8tdj7b7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vectorcoder.androidecommerce.mydemoo",
+            "certificate_hash": "5b44fbc7ec3b8e192fecfd6c1a92b141e51945ec"
+          }
+        },
+        {
+          "client_id": "317744243051-lagv65djirjekbmh5h5rtu3ir31r8jmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjiBFxYNNqt6BQ_9CM9DXU2dqwPofCs0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317744243051-lagv65djirjekbmh5h5rtu3ir31r8jmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

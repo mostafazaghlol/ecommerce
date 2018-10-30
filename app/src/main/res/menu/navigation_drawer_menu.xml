@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawerHome"
+            android:icon="@drawable/ic_home"
+            android:title="@string/actionHome" />
+
+        <item
+            android:id="@+id/drawerCategory"
+            android:icon="@drawable/ic_categories"
+            android:title="@string/actionCategories" />
+
+        <item
+            android:id="@+id/drawerCart"
+            android:icon="@drawable/ic_cart"
+            android:title="@string/actionShop" />
+
+        <item
+            android:id="@+id/drawerAccount"
+            android:icon="@drawable/ic_account"
+            android:title="@string/actionAccount" />
+
+        <item
+            android:id="@+id/drawerOrders"
+            android:icon="@drawable/ic_order"
+            android:title="@string/actionOrders" />
+
+        <item
+            android:id="@+id/drawerAddresses"
+            android:icon="@drawable/ic_location"
+            android:title="@string/actionAddresses" />
+
+        <item
+            android:id="@+id/drawerFavourite"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/actionFavourites" />
+
+        <item
+            android:id="@+id/drawerIntro"
+            android:icon="@drawable/ic_intro"
+            android:title="@string/actionIntro" />
+
+        <item
+            android:id="@+id/drawerNews"
+            android:icon="@drawable/ic_newspaper"
+            android:title="@string/actionNews" />
+
+        <item
+            android:id="@+id/drawerAbout"
+            android:icon="@drawable/ic_info"
+            android:title="@string/actionAbout" />
+
+        <item
+            android:id="@+id/drawerContactUs"
+            android:icon="@drawable/ic_chat_bubble"
+            android:title="@string/actionContactUs" />
+
+        <item
+            android:id="@+id/drawerSettings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/actionSettings" />
+        <item android:id="@+id/drawer_about_developer"
+            android:icon="@drawable/ic_person"
+            android:title="@string/developer"/>
+
+        <item
+            android:id="@+id/drawerLogin"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/actionLogin" />
+
+        <item
+            android:id="@+id/drawerLogout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/actionLogout" />
+
+    </group>
+
+</menu>

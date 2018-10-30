@@ -1,0 +1,40 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/categories_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textSize="18sp"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginStart="10dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/categories_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/categories_header" />
+
+        <TextView
+            android:id="@+id/empty_record_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_not_found"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimaryLight"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

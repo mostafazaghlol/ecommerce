@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="colorPrimary">#51688F</color>
+    <color name="colorPrimaryDark">#485c7f</color>
+    <color name="colorPrimaryLight">#5c76a3</color>
+
+    <color name="colorAccent">#51688F</color>
+    <color name="colorAccentDark">#536a93</color>
+    <color name="colorAccentLight">#5c76a3</color>
+
+    <color name="colorAccentRed">#ff0000</color>
+    <color name="colorAccentBlue">#03a9f4</color>
+    <color name="colorAccentGrey">#b3b3b3</color>
+    <color name="colorAccentGreen">#557f5f</color>
+    <color name="colorAccentOrange">#f04e42</color>
+
+    <color name="textColorPrimary">#999999</color>
+    <color name="textColorPrimaryDark">#757575</color>
+    <color name="textColorPrimaryLight">#bfbfbf</color>
+    <color name="textColorSecondary">#404040</color>
+    <color name="textColorSecondaryDark">#212121</color>
+    <color name="textColorSecondaryLight">#666666</color>
+
+    <color name="windowBackground">#eeeeee</color>
+    <color name="windowBackgroundDark">#e6e6e6</color>
+    <color name="windowBackgroundLight">#f2f2f2</color>
+
+    <color name="layoutBackground">#d9d9d9</color>
+    <color name="layoutBackgroundDark">#cccccc</color>
+    <color name="layoutBackgroundLight">#e0e0e0</color>
+
+    <color name="linkColor">#0000ee</color>
+    <color name="iconsDark">#4d4d4d</color>
+    <color name="iconsLight">#808080</color>
+    <color name="dividerDark">#999999</color>
+    <color name="dividerLight">#cccccc</color>
+
+
+    <color name="socialColorGoogle">#dd4b39</color>
+    <color name="socialColorTwitter">#55acee</color>
+    <color name="socialColorFacebook">#3b5998</color>
+    <color name="socialColorLinkedin">#007bb5</color>
+    <color name="socialColorInstagram">#125688</color>
+
+</resources>

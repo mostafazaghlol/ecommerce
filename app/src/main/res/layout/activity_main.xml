@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/myToolbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/main_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            android:background="@color/colorPrimaryDark"
+            app:theme="@style/MyNavigationDrawer" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/drawer_header_height">
+
+                    <ImageView
+                        android:id="@+id/drawer_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icons_stripe"
+                        android:scaleType="centerCrop"
+                        android:alpha=".3"
+                        android:tint="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingEnd="0dp"
+                        android:paddingTop="5dp"
+                        android:paddingStart="15dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center_vertical">
+
+                        <com.myshopp.androidecommerce.customs.CircularImageView
+                            android:id="@+id/drawer_profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/profile"
+                            android:scaleType="fitCenter"
+                            app:border_width="1dp"
+                            app:border_overlay="true"
+                            app:border_color="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/drawer_profile_welcome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/welcome"
+                                android:textSize="14sp"
+                                android:textColor="@color/windowBackgroundDark" />
+
+                            <TextView
+                                android:id="@+id/drawer_profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/windowBackground" />
+
+                            <TextView
+                                android:id="@+id/drawer_profile_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="@color/windowBackgroundDark" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ExpandableListView
+                    android:id="@+id/main_drawer_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:divider="@color/dividerLight"
+                    android:dividerHeight="1dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:groupIndicator="@null"
+                    android:background="@color/white"
+                    android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
